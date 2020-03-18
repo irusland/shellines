@@ -50,9 +50,21 @@ pi@raspberrypi:~ $ wpa_cli select_network 0
 
 add your script at the end of 
 ```console
-sudo nano .bashrc
+pi@raspberrypi:~ $ sudo nano .bashrc
 ```
 
 #### To run script on boot
- 
+???
 
+## Connect to Raspberry PI remotely
+#### VNC connect
+- Start VNC server 
+```console
+pi@raspberrypi:~ $ vncserver
+```
+- then press `cmd` + `K` in Finder to connect to server
+- type `vnc://pi@192.168.0.109:5901`
+
+#### SSH connect
+* then press `cmd` + `K` in Finder to connect to server
+* type `ssh://pi@192.168.0.109`
