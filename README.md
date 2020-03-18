@@ -21,6 +21,14 @@ Check known wifi networks
 ```console
 pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
+```console
+network={
+	ssid=""
+	psk=""
+	key_mgmt=WPA-PSK
+	priority=2
+}
+```
 Networks list
 ```console
 pi@raspberrypi:~ $ wpa_cli list_networks
@@ -30,9 +38,21 @@ network id / ssid / bssid / flags
 1	@irusland	any	[CURRENT]
 ```
 Select another wifi network
-```shell script
+```console
 pi@raspberrypi:~ $ wpa_cli select_network 0
 ```
+
+## Run script
+#### To run script after console enter
+```diff
+- note: not on boot!
 ```
-pi@raspberrypi:~ $ wpa_cli select_network 0
+
+add your script at the end of 
+```console
+sudo nano .bashrc
 ```
+
+#### To run script on boot
+ 
+
