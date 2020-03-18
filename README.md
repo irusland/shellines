@@ -33,3 +33,6 @@ Select another wifi network
 ```shell script
 pi@raspberrypi:~ $ wpa_cli select_network 0
 ```
+```
+pi@raspberrypi:~ $ wpa_cli select_network 0
+```
