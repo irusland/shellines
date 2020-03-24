@@ -68,3 +68,14 @@ pi@raspberrypi:~ $ vncserver
 #### SSH connect
 * then press `cmd` + `K` in Finder to connect to server
 * type `ssh://pi@192.168.0.109`
+
+
+# HomeKit
+## MotionEye
+Starting server `-b` in background
+```console
+meyectl startserver -b -c /etc/motioneye/motioneye.conf
+```
+```console
+meyectl stopserver -b -c /etc/motioneye/motioneye.conf
+```
