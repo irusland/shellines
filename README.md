@@ -74,8 +74,8 @@ pi@raspberrypi:~ $ vncserver
 ## MotionEye
 Starting server `-b` in background
 ```console
-meyectl startserver -b -c /etc/motioneye/motioneye.conf
+pi@raspberrypi:~ $ sudo meyectl startserver -b -c /etc/motioneye/motioneye.conf
 ```
 ```console
-meyectl stopserver -b -c /etc/motioneye/motioneye.conf
+pi@raspberrypi:~ $ sudo meyectl stopserver -b -c /etc/motioneye/motioneye.conf
 ```
