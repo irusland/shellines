@@ -69,6 +69,11 @@ pi@raspberrypi:~ $ vncserver
 * then press `cmd` + `K` in Finder to connect to server
 * type `ssh://pi@192.168.0.109`
 
+### See Disks mounted on raspberry
+```console
+pi@raspberrypi:~ $ lsblk
+```
+
 
 # HomeKit
 ## MotionEye
