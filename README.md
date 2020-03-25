@@ -69,10 +69,17 @@ pi@raspberrypi:~ $ vncserver
 * then press `cmd` + `K` in Finder to connect to server
 * type `ssh://pi@192.168.0.109`
 
+
 ### See Disks mounted on raspberry
 ```console
 pi@raspberrypi:~ $ lsblk
 ```
+
+### AFP File share
+```console
+pi@raspberrypi:~ $ sudo nano /etc/netatalk/AppleVolumes.default
+```
+edit file, add shared volumes at the end of file
 
 
 # HomeKit
