@@ -16,6 +16,12 @@ pytest --cov-report html --cov=[module] --cov=[second_module] [source]
 zip -r httpserver.zip . -x ".*" -x "*/.*" -x "__MACOSX" -x "*/__pycache__/*" -x "*/__pycache__/" -x "__pycache__/*" -x "*/*,cover" -x "htmlcov/*" -x "htmlcov/" -x "venv/*" -x "venv/" -x "*.log" -x "*/chroma.jpg"
 ```
 
+## MBP 
+Check CPU temperature 
+```console
+sudo powermetrics
+```
+
 ## Raspberry PI
 Check known wifi networks
 ```console
