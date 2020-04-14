@@ -49,8 +49,7 @@ pi@raspberrypi:~ $ wpa_cli select_network 0
 ```
 Change Bojour name (Avahi-daemon) in 2 files!
 ```console
-sudo nano /etc/hosts
-sudo nano
+$ sudo nano /etc/hosts
 
 127.0.0.1       localhost
 ::1             localhost ip6-localhost ip6-loopback
