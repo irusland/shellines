@@ -99,6 +99,26 @@ pi@raspberrypi:~ $ vncserver
 pi@raspberrypi:~ $ lsblk
 ```
 
+### Avahi-daemon
+#### Finder sidebar setting
+```console
+$ sudo nano /etc/avahi/services/afpd.service
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+<name replace-wildcards="yes">%h</name>
+<service>
+<type>_afpovertcp._tcp</type>
+<port>548</port>
+</service>
+<service>
+<type>_device-info._tcp</type>
+<port>0</port>
+<txt-record>model=Xserve</txt-record>
+</service>
+</service-group>
+```
+
 ### AFP File share
 ```console
 pi@raspberrypi:~ $ sudo nano /etc/netatalk/AppleVolumes.default
