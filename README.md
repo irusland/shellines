@@ -23,7 +23,7 @@ sudo powermetrics
 ```
 
 ## Raspberry PI
-Check known wifi networks
+#### Check known wifi networks
 ```console
 pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
@@ -46,6 +46,25 @@ network id / ssid / bssid / flags
 Select another wifi network
 ```console
 pi@raspberrypi:~ $ wpa_cli select_network 0
+```
+Change Bojour name (Avahi-daemon) in 2 files!
+```console
+sudo nano /etc/hosts
+sudo nano
+
+127.0.0.1       localhost
+::1             localhost ip6-localhost ip6-loopback
+ff02::1         ip6-allnodes
+ff02::2         ip6-allrouters
+
+127.0.1.1       raspberrypi #change this line to your desired hostname.
+```
+```console
+$ sudo nano /etc/hostname
+```
+The last step
+```console
+$ sudo reboot
 ```
 
 ## Run script
