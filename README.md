@@ -125,6 +125,11 @@ pi@raspberrypi:~ $ sudo nano /etc/netatalk/AppleVolumes.default
 ```
 edit file, add shared volumes at the end of file
 
+### External Disk Mount
+#### Online preview of log
+```console
+pi@raspberrypi:~ $ tail -f /var/log/messages
+```
 
 # HomeKit
 ## MotionEye
