@@ -53,11 +53,10 @@ do
         HEADER_COUNT=$(( HEADER_COUNT-1 ))
         continue
     fi
-    echo - $line
     
     if [ -z "$line" ]
     then
-        echo $ID $SENDER from: $RECEIVER $REASON [$DAYW $MONTH $DAY $TIME]
+        echo $ID from: $SENDER to: $RECEIVER fail: $REASON time: [$DAYW $MONTH $DAY $TIME]
         IS_FIRST_LINE=1
         continue
     fi
@@ -87,3 +86,4 @@ do
     fi
    
 done < "${1:-/dev/stdin}"
+
